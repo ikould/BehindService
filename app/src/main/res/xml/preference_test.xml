@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General">
+
+        <CheckBoxPreference
+            android:key="checkbox1"
+            android:title="Using HTTP 1.1" />
+        <CheckBoxPreference
+            android:key="checkbox2"
+            android:title="Using Proxy" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Security">
+
+
+        <EditTextPreference
+            android:key="edittext_preference"
+            android:title="Setting Password"
+            android:dialogTitle="Please input password:"
+            android:password="true"/>
+
+        <ListPreference
+            android:key="list_preference"
+            android:title="Security Preferences"
+            android:entries="@array/list_preference"
+            android:entryValues="@array/list_preference"
+            android:dialogTitle="Security options" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Launch Submenu">
+
+        <PreferenceScreen
+            android:key="submenu"
+            android:title="Network tools">
+
+            <CheckBoxPreference
+                android:key="checkbox3"
+                android:title="Start fishing filter" />
+
+            <CheckBoxPreference
+                android:key="checkbox4"
+                android:title="Check website automatically"/>
+
+        </PreferenceScreen>
+
+
+        <PreferenceScreen
+            android:title="Launch Intent Activity">
+
+
+            <intent android:action="android.intent.action.VIEW"
+                android:data="http://www.google.com" />
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

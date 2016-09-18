@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_dark"
+        android:gravity="center">
+
+        <com.ikould.frame.widget.StatusButton
+            android:id="@+id/tv_main_allApp"
+            style="@style/MainTable"
+            android:text="@string/table_apps_list" />
+
+        <com.ikould.frame.widget.StatusButton
+            android:id="@+id/tv_main_run"
+            style="@style/MainTable"
+            android:text="@string/table_run_apps" />
+
+        <com.ikould.frame.widget.StatusButton
+            android:id="@+id/tv_main_setting"
+            style="@style/MainTable"
+            android:layout_marginRight="0dp"
+            android:text="@string/table_setting" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/miniAdLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" />
+
+</LinearLayout>

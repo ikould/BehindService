@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">杀你所想</string>
+
+    <!-- main table -->
+    <string name="table_apps_list">App列表</string>
+    <string name="table_run_apps">正在运行</string>
+    <string name="table_setting">相关设置</string>
+
+    <!-- setting -->
+    <string name="setting_title">设置中心</string>
+    <string name="setting_auto_clear">开启自动清除</string>
+    <string name="setting_fast_clear">立即清除</string>
+    <string name="setting_close_advert">关闭广告</string>
+</resources>

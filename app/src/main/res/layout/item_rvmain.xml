@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_rvmain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/iv_rvitem_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/ic_launcher"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/tv_rvitem_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x12" />
+
+        <com.ikould.frame.widget.StatusButton
+            android:id="@+id/sb_rvitem_checkd"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/item_selector"
+            android:padding="10dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dep_grey"/>
+</LinearLayout>
