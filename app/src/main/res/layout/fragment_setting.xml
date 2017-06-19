@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/light_dark"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_dark"
+              android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="55dp"
         android:background="@color/dark"
         android:gravity="center"
         android:text="@string/setting_title"
         android:textColor="@color/white"
-        android:textSize="@dimen/x17" />
+        android:textSize="@dimen/x17"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,18 +27,18 @@
 
             <TextView
                 style="@style/SettingItemText"
-                android:text="@string/setting_auto_clear" />
+                android:text="@string/setting_auto_clear"/>
 
             <CheckBox
                 android:id="@+id/cb_set_clear"
                 style="@style/SettingItemCb"
-                android:background="@drawable/selector_checkbox" />
+                android:background="@drawable/selector_checkbox"/>
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/dep_grey" />
+            android:background="@color/dep_grey"/>
 
         <!-- 关闭广告 -->
         <LinearLayout
@@ -47,18 +47,18 @@
 
             <TextView
                 style="@style/SettingItemText"
-                android:text="@string/setting_close_advert" />
+                android:text="@string/setting_close_advert"/>
 
             <CheckBox
                 android:id="@+id/cb_close_adv"
                 style="@style/SettingItemCb"
-                android:background="@drawable/selector_checkbox" />
+                android:background="@drawable/selector_checkbox"/>
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/dep_grey" />
+            android:background="@color/dep_grey"/>
 
         <!-- 立即清除 -->
         <LinearLayout
@@ -67,17 +67,36 @@
 
             <TextView
                 style="@style/SettingItemText"
-                android:text="@string/setting_fast_clear" />
+                android:text="@string/setting_fast_clear"/>
 
             <CheckBox
                 android:id="@+id/cb_fastclear_arrow"
                 style="@style/SettingItemCb"
-                android:background="@drawable/arrow_selector" />
+                android:background="@drawable/arrow_selector"/>
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/dep_grey" />
+            android:background="@color/dep_grey"/>
+
+        <!-- App定时 -->
+        <LinearLayout
+            android:id="@+id/ll_app_timer"
+            style="@style/SettingItemGroup">
+
+            <TextView
+                style="@style/SettingItemText"
+                android:text="@string/setting_app_timer"/>
+
+            <ImageView
+                style="@style/SettingItemCb"
+                android:background="@drawable/arrow_selector"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dep_grey"/>
     </LinearLayout>
 </LinearLayout>

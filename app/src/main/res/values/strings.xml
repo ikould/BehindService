@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">杀你所想</string>
+    <string name="app_name">屠杀厂</string>
 
     <!-- main table -->
     <string name="table_apps_list">App列表</string>
@@ -10,5 +10,10 @@
     <string name="setting_title">设置中心</string>
     <string name="setting_auto_clear">开启自动清除</string>
     <string name="setting_fast_clear">立即清除</string>
+    <string name="setting_app_timer">App定时</string>
     <string name="setting_close_advert">关闭广告</string>
+
+    <string name="setting_app_timer_title">App定时中心</string>
+    <string name="setting_app_start_switch">定时打开</string>
+    <string name="setting_app_close_switch">定时关闭</string>
 </resources>

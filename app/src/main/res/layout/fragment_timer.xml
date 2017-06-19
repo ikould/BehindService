@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_dark"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/dark">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/setting_app_timer_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x17"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11ffffff"
+        android:drawableLeft="@drawable/ic_app"
+        android:drawablePadding="10dp"
+        android:padding="8dp"
+        android:text="钉钉"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <!-- 定时App服务 -->
+    <LinearLayout
+        style="@style/SettingItemGroup">
+
+        <LinearLayout
+            android:id="@+id/ll_app_time_open"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_app_start_switch"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x12"/>
+
+            <TextView
+                android:id="@+id/tv_app_msg_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="9:00 - 9:30"
+                android:textColor="@color/dep_grey"
+                android:textSize="@dimen/x12"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_app_time_start"
+            style="@style/SettingItemCb"
+            android:background="@drawable/selector_checkbox"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <!-- 定时App服务 -->
+    <LinearLayout
+        style="@style/SettingItemGroup">
+
+        <LinearLayout
+            android:id="@+id/ll_app_time_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_app_close_switch"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x12"/>
+
+            <TextView
+                android:id="@+id/tv_app_msg_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="9:00 - 9:30"
+                android:textColor="@color/dep_grey"
+                android:textSize="@dimen/x12"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_app_time_end"
+            style="@style/SettingItemCb"
+            android:background="@drawable/selector_checkbox"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dep_grey"/>
+</LinearLayout>
